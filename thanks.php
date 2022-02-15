@@ -1,9 +1,9 @@
 <?php
   $nickname = htmlspecialchars($_POST['nickname'],ENT_QUOTES, 'UTF-8');
-  $email = htmlspecialchars($_POST['mail'],ENT_QUOTES, 'UTF-8');
+  $email = htmlspecialchars($_POST['email'],ENT_QUOTES, 'UTF-8');
   $content = htmlspecialchars($_POST['content'],ENT_QUOTES, 'UTF-8');
 
-  $dsn = 'mysql:dbname=phpkisoo;host=localhost';
+  $dsn = 'mysql:dbname=phpkiso;host=localhost';
   $user = 'root';
   $password='';
   $dbh = new PDO($dsn, $user, $password);
@@ -24,7 +24,7 @@
   <div>
     <h3>お問い合わせ詳細内容</h3>
     <p>ニックネーム：<?php echo $nickname; ?></p>
-    <p>メールアドレス：<?php echo $mail; ?></p>
+    <p>メールアドレス：<?php echo $email; ?></p>
     <p>お問い合わせ内容：<?php echo $content; ?></p>
     <a href="./index.php">入力画面に戻る</a>
   </div>

@@ -1,5 +1,5 @@
 <?php
-  
+  // var_dump($_POST['nickname']);
   $nickname = htmlspecialchars($_POST['nickname'],ENT_QUOTES, 'UTF-8');
   $email = htmlspecialchars($_POST['email'],ENT_QUOTES, 'UTF-8');
   $content = htmlspecialchars($_POST['content'],ENT_QUOTES, 'UTF-8');

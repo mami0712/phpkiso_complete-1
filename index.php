@@ -9,7 +9,7 @@
   <form method="POST" action="check.php">
     <div>
         ニックネーム<br>
-        <input type="text" name="name" style="width:100px">
+        <input type="text" name="nickname" style="width:100px">
     </div>
     <div>
         メールアドレス<br>
